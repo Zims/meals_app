@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import './models/category.dart';
 import './models/meal.dart';
+
 const DUMMY_CATEGORIES = const [
   Category(
     id: 'c1',
@@ -84,6 +85,29 @@ const DUMMY_MEALS = const [
       'After 2 minutes, add the tomato pieces, salt, pepper and your other spices.',
       'The sauce will be done once the spaghetti are.',
       'Feel free to add some cheese on top of the finished dish.'
+    ],
+    isGlutenFree: false,
+    isVegan: true,
+    isVegetarian: true,
+    isLactoseFree: true,
+  ),
+  Meal(
+    id: 'o1',
+    categories: [
+      'c9',
+    ],
+    title: 'French toast',
+    affordability: Affordability.Affordable,
+    complexity: Complexity.Simple,
+    imageUrl:
+        'https://www.tasteofhome.com/wp-content/uploads/2018/01/Vanilla-French-Toast_EXPS_SDAS17_7542_C04_12_1b-696x696.jpg',
+    duration: 5,
+    ingredients: ['Bread', 'Toaster', 'Dad'],
+    steps: [
+      'Wake up dad',
+      'Beg for toast',
+      'Eat',
+      'Go to school',
     ],
     isGlutenFree: false,
     isVegan: true,
